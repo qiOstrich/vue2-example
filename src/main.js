@@ -23,7 +23,9 @@ import secondcomponent from './component/secondcomponent.vue'
 // 创建一个路由器实例
 // 并且配置路由规则
 const router = new VueRouter({
-  mode: 'history',
+  // mode: 'history',  // show url router path
+  mode: 'hash',  // router url path with #
+  // mode: 'abstract', // router url path hidden
   base: __dirname,
   routes: [
     {
